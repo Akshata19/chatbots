@@ -1,0 +1,32 @@
+stories:
+- story: delivery or refund flow
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_help
+    - action: utter_ask_help
+    - intent: delivery_help
+    - action: utter_delivery_help
+
+- story: return flow
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_help
+    - action: utter_ask_help
+    - intent: return_help
+    - action: utter_return_help
+
+- story: refund flow
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_help
+    - action: utter_ask_help
+    - intent: refund_help
+    - action: utter_refund_help
+
+- story: something else path
+  steps:
+    - intent: something_else
+    - action: utter_something_else

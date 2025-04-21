@@ -1,0 +1,77 @@
+version: "3.1"
+
+stories:
+  - story: delivery or refund flow
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_help
+      - action: utter_ask_help
+      - intent: delivery_help
+      - action: utter_delivery_help
+
+  - story: return flow
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_help
+      - action: utter_ask_help
+      - intent: return_help
+      - action: utter_return_help
+
+  - story: refund flow
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_help
+      - action: utter_ask_help
+      - intent: refund_help
+      - action: utter_refund_help
+
+  - story: something else path
+    steps:
+      - intent: something_else
+      - action: utter_something_else
+
+  - story: talk to agent flow
+    steps:
+      - intent: talk_to_agent
+      - action: utter_talk_to_agent_scripted
+
+  - story: provide order ID
+    steps:
+      - intent: provide_order_id
+      - action: action_log_ticket
+
+  - story: return to main menu
+    steps:
+      - intent: go_to_main_menu
+      - action: utter_main_menu
+
+    # Second chatbot story (simplified)
+  - story: second_chatbot_flow
+    steps:
+      - intent: greet_second
+      - action: action_delayed_greeting
+      - intent: goodbye_second
+      - action: utter_second_goodbye
+
+  - story: open my account menu
+    steps:
+      - intent: my_account
+      - action: utter_my_account_options
+
+  - story: change password flow
+    steps:
+      - intent: change_password
+      - action: utter_change_password
+
+  - story: change username flow
+    steps:
+      - intent: change_username
+      - action: utter_change_username
+
+  - story: delete account flow
+    steps:
+      - intent: delete_account
+      - action: utter_delete_account

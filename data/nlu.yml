@@ -1,0 +1,180 @@
+version: "3.1"
+
+nlu:
+  # First chatbot intents
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+
+  - intent: provide_order_id
+    examples: |
+      - My order ID is [1234](order_id)
+      - It's order [987654](order_id)
+      - Here is the order ID: [7654321](order_id)
+      - [1234](order_id)
+      - [7890](order_id)
+      - Order [111222](order_id)
+      - I placed order [888899](order_id)
+      - Can you check order [3456](order_id)
+      - [999000](order_id)
+      - order number is [555666](order_id)
+      - check order [7777](order_id)
+  - intent: ask_help
+    examples: |
+      - I need help
+      - Please help me
+      - Can you help me?
+      - I require assistance
+
+  - intent: delivery_help
+    examples: |
+      - track my order
+      - where is my order
+      - I want to track my order
+      - check order status
+      - track order
+
+  - intent: return_help
+    examples: |
+      - I want to return my order
+      - How do I return an item?
+      - return this item
+      - I need to return something
+
+  - intent: refund_help
+    examples: |
+      - I want a refund
+      - refund my order
+      - How do I get my money back?
+      - I need a refund
+  # Second chatbot intents
+  - intent: greet_second
+    examples: |
+      - Hello from second bot
+      - Hi there, second chatbot
+      - Hey second bot
+      - Hi, how are you second bot?
+
+  - intent: goodbye_second
+    examples: |
+      - Bye second bot
+      - Goodbye second bot
+      - See you later, second bot
+      - Bye bye second bot
+
+  - intent: my_account
+    examples: |
+      - my account
+      - account settings
+      - I want to change my account details
+      - show me account options
+      - manage my account
+
+  - intent: change_password
+    examples: |
+      - change my password
+      - I forgot my password
+      - reset password
+      - how can I change my password
+
+  - intent: change_username
+    examples: |
+      - change my username
+      - I want to update my username
+      - edit my username
+
+  - intent: delete_account
+    examples: |
+      - delete my account
+      - remove my profile
+      - I want to delete my account permanently
+
+  # Regex for order_id
+  - regex: order_id
+    examples: |
+      - \d{4,8}

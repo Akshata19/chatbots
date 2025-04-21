@@ -1,0 +1,136 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_help
+  - delivery_help
+  - return_help
+  - refund_help
+  - something_else
+  - talk_to_agent
+  - provide_order_id
+  - go_to_main_menu
+  - deny
+  - my_account
+  - change_password
+  - change_username
+  - delete_account
+
+  # Second chatbot intents
+
+  - greet_second
+  - goodbye_second
+
+entities:
+  - order_id
+
+slots:
+  order_id:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: order_id
+
+responses:
+  utter_my_account_options:
+    - text: "Here are some account options:"
+      buttons:
+        - title: "Change Password"
+          payload: /change_password
+        - title: "Change Username"
+          payload: /change_username
+        - title: "Delete Account"
+          payload: /delete_account
+        - title: "Back to Main Menu"
+          payload: /go_to_main_menu
+  utter_change_password:
+    - text: "To change your password, please go to your profile settings or use the account section in the app."
+  utter_change_username:
+    - text: "To update your username, visit your profile section or contact support."
+  utter_delete_account:
+    - text: "Deleting your account is permanent. To proceed, please visit your profile settings or contact support directly."
+  utter_greet:
+    - text: "Hi, I'm your virtual shopping assistant. How can I help you today?"
+      buttons:
+        - title: "A delivery, return or refund"
+          payload: "/ask_help"
+        - title: "Something else"
+          payload: "/something_else"
+
+  utter_ask_help:
+    - text: "What would you like help with?"
+      buttons:
+        - title: "Track my order"
+          payload: "/delivery_help"
+        - title: "Start a return"
+          payload: "/return_help"
+        - title: "Request a refund"
+          payload: "/refund_help"
+        - title: "Talk to Agent"
+          payload: "/talk_to_agent"
+
+  utter_delivery_help:
+    - text: "Sure, to track your order, please provide your order number."
+
+  utter_return_help:
+    - text: "To start a return, please share the order number and reason for return."
+
+  utter_refund_help:
+    - text: "Refunds are usually processed within 5-7 business days. Let me help you with yours."
+
+  utter_something_else:
+    - text: "Please enter your question below or select an option from the menu."
+
+  utter_talk_to_agent_scripted:
+    - text: |
+        Hey, this is Priya from customer support. I’ll assist you with that.  
+        Could you please confirm your order ID so I can check the details?
+
+  utter_ticket_logged:
+    - text: "Thanks! I've logged the issue for Order ID {order_id}. You'll receive an update within 24 hours."
+      buttons:
+        - title: "Check another order"
+          payload: "/ask_help"
+        - title: "Return to Main Menu"
+          payload: "/go_to_main_menu"
+
+  utter_ask_again:
+    - text: "Hmm, I couldn’t get the order ID. Can you please type it again?"
+
+  utter_main_menu:
+    - text: "Welcome back! How can I assist you today?"
+      buttons:
+        - title: "A delivery, return or refund"
+          payload: "/ask_help"
+        - title: " My Account"
+          payload: "/my_account"
+        - title: "Something else"
+          payload: "/something_else"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_goodbye:
+    - text: "Goodbye! Let me know if you need help with anything else."
+
+  # Second chatbot responses
+  utter_second_greet:
+    - text: "Hello, I am your Shop Sphere chatbot."
+    - text: "How can I help you today? Just write in the text box or use one of our quick answers."
+      buttons:
+        - title: "A delivery, return or refund"
+          payload: "/ask_help"
+        - title: "Something else"
+          payload: "/something_else"
+
+  utter_second_goodbye:
+    - text: "Goodbye, I hope I helped. See you later!"
+
+actions:
+  - action_log_ticket
+  - action_delayed_greeting
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
