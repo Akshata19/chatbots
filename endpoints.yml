@@ -41,7 +41,4 @@
 #  password: password
 #  queue: queue
 action_endpoint:
-  url: "http://localhost:5055/webhook"
-  cors:
-    - "*"
-
+  url: "https://impartial-communication-production-6893.up.railway.app/webhook"
