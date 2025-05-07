@@ -111,13 +111,12 @@ nlu:
       - Can you help me?
       - I require assistance
 
-  - intent: delivery_help
+  - intent: track_order
     examples: |
-      - track my order
-      - where is my order
       - I want to track my order
-      - check order status
-      - track order
+      - show my orders
+      - check delivery status
+      - track my package
 
   - intent: return_help
     examples: |
@@ -173,6 +172,13 @@ nlu:
       - delete my account
       - remove my profile
       - I want to delete my account permanently
+
+  - intent: select_order
+    examples: |
+      - Show me order [681afeb39c1c7e8582fc74ed](order_id)
+      - Track [681afeb39c1c7e8582fc74ed](order_id)
+      - [681afeb39c1c7e8582fc74ed](order_id)
+      - show order
 
   # Regex for order_id
   - regex: order_id

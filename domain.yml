@@ -15,6 +15,8 @@ intents:
   - change_password
   - change_username
   - delete_account
+  - track_order
+  - select_order
 
   # Second chatbot intents
 
@@ -31,8 +33,10 @@ slots:
     mappings:
       - type: from_entity
         entity: order_id
-
 responses:
+  utter_ask_order_selection:
+    - text: "Please reply with the number of the order you'd like to track in detail."
+
   utter_my_account_options:
     - text: "Here are some account options:"
       buttons:
@@ -62,7 +66,7 @@ responses:
     - text: "What would you like help with?"
       buttons:
         - title: "Track my order"
-          payload: "/delivery_help"
+          payload: "/track_order"
         - title: "Start a return"
           payload: "/return_help"
         - title: "Request a refund"
@@ -72,6 +76,9 @@ responses:
 
   utter_delivery_help:
     - text: "Sure, to track your order, please provide your order number."
+
+  utter_track_order:
+    - text: "Sure, I can help you track your order. Can you please share the order ID?"
 
   utter_return_help:
     - text: "To start a return, please share the order number and reason for return."
@@ -128,6 +135,8 @@ responses:
     - text: "Goodbye, I hope I helped. See you later!"
 
 actions:
+  - action_track_order
+  - action_show_order_details
   - action_log_ticket
   - action_delayed_greeting
 

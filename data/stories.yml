@@ -75,3 +75,12 @@ stories:
     steps:
       - intent: delete_account
       - action: utter_delete_account
+  - story: track order flow
+    steps:
+      - intent: track_order
+      - action: action_track_order
+
+  - story: show selected order details
+    steps:
+      - intent: select_order
+      - action: action_show_order_details
