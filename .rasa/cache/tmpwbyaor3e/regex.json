@@ -1,0 +1,6 @@
+[
+  {
+    "name": "order_id",
+    "pattern": "\\d{4,8}"
+  }
+]

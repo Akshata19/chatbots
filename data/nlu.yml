@@ -104,12 +104,43 @@ nlu:
       - [999000](order_id)
       - order number is [555666](order_id)
       - check order [7777](order_id)
+      - My order number is [12345](order_id)
+      - Please check order [67890](order_id)
+      - Here’s the order ID: [998877](order_id)
+      - The tracking code is [000123](order_id)
+      - [54321](order_id)
+      - [321789](order_id)
+      - Can you check order [112233](order_id)
+      - It’s [9876](order_id)
+      - Check ID [909090](order_id)
+      - Order ID: [123321](order_id)
+
   - intent: ask_help
     examples: |
       - I need help
       - Please help me
       - Can you help me?
       - I require assistance
+      - I need help with an issue
+      - Please assist me with my return
+      - Can you help me check my order?
+      - I need guidance to get a refund
+      - Something's wrong with my order
+      - Help me find my delivery info
+      - How do I update my account?
+      - I don’t know what to do next
+      - I need instructions for a return
+      - What can I do if my order is delayed?
+      - I need help with returning a product
+      - Can you explain how delivery works?
+      - How do I cancel an order?
+      - I need instructions for getting a refund
+      - What should I do if the product is damaged?
+      - Help me check my order status
+      - I have a question about my purchase
+      - Assist me with the order issue
+      - Something went wrong with my order
+      - Can I get some support with this?
 
   - intent: track_order
     examples: |
@@ -153,6 +184,11 @@ nlu:
       - I want to change my account details
       - show me account options
       - manage my account
+      - Show my account details
+      - View account information
+      - What’s in my account?
+      - Account preferences
+      - I want to check my profile
 
   - intent: change_password
     examples: |
@@ -179,6 +215,34 @@ nlu:
       - Track [681afeb39c1c7e8582fc74ed](order_id)
       - [681afeb39c1c7e8582fc74ed](order_id)
       - show order
+      - I want to see this order
+      - Select this item
+      - Click this order
+      - Show me the chosen order
+      - This is the one I’m looking for
+
+  - intent: talk_to_agent
+    examples: |
+      - I want to talk to a person
+      - Can you connect me to a human?
+      - I need to speak to support
+      - Let me talk to a real agent
+      - Can I speak with customer care?
+      - Transfer me to a human assistant
+      - I don’t want to chat with the bot
+      - Is someone from the team available?
+      - I prefer human help
+      - I’d like to speak to someone real
+      - I want to speak with someone directly
+      - Connect me to a support agent
+      - Can you transfer me to a human?
+      - I need to talk to a person
+      - Let me chat with someone from the team
+      - Talk to a real support member
+      - Please connect me to human assistance
+      - I don't want to talk to the bot
+      - Give me the number for customer support
+      - I want a real person to handle this
 
   # Regex for order_id
   - regex: order_id

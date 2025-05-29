@@ -1,0 +1,248 @@
+version: "3.1"
+nlu:
+  - intent: affirm
+    examples: |
+      - yes
+      - absolutely
+      - sure thing
+      - sounds good
+      - correct
+      - indeed
+      - okay yes
+      - I agree
+      - totally
+      - that’s right
+
+  - intent: ask_help
+    examples: |
+      - I need some help
+      - can you assist me?
+      - I don’t know what to do
+      - please guide me
+      - how can I fix this?
+      - I need support
+      - I’m stuck, help me
+      - how do I solve this?
+      - can I get help?
+      - I’m confused
+
+  - intent: bot_challenge
+    examples: |
+      - are you a real person?
+      - is this a robot?
+      - who am I talking to?
+      - are you human or bot?
+      - what are you?
+      - is this automated?
+      - bot or human?
+      - are you just code?
+      - you're a bot, right?
+      - are you real?
+
+  - intent: change_password
+    examples: |
+      - I want to change my password
+      - how do I reset my password?
+      - forgot my password
+      - help me change login
+      - update password
+      - change credentials
+      - set new password
+      - modify my login info
+      - need a new password
+      - password update please
+
+  - intent: change_username
+    examples: |
+      - I want to update my username
+      - change the name on my profile
+      - set a new username
+      - edit account name
+      - modify my user name
+      - update display name
+      - new profile name
+      - adjust my username
+      - change what shows on my account
+      - I want a different name
+
+  - intent: delete_account
+    examples: |
+      - delete my account
+      - close my profile
+      - I want to remove my account
+      - erase all my data
+      - terminate account
+      - deactivate my profile
+      - remove account permanently
+      - shut down my login
+      - how do I cancel my account?
+      - stop my account access
+
+  - intent: delivery_help
+    examples: |
+      - my order is late
+      - where’s my package?
+      - I haven’t received my delivery
+      - delivery delay issue
+      - can you check delivery?
+      - package hasn’t arrived
+      - I need help with shipping
+      - where is my product?
+      - no sign of my order
+      - when will it be delivered?
+
+  - intent: deny
+    examples: |
+      - no
+      - nope
+      - not really
+      - absolutely not
+      - no thanks
+      - I don’t agree
+      - that’s wrong
+      - incorrect
+      - I don’t want that
+      - not right now
+
+  - intent: go_to_main_menu
+    examples: |
+      - take me back
+      - return to home
+      - go to main menu
+      - restart chat
+      - I want to begin again
+      - start over please
+      - reset conversation
+      - back to start
+      - I want to go to menu
+      - show me the homepage
+
+  - intent: greet
+    examples: |
+      - hi
+      - hello there
+      - good day
+      - hey!
+      - hiya
+      - greetings
+      - what's up?
+      - good morning
+      - evening!
+      - hey there
+
+  - intent: mood_unhappy
+    examples: |
+      - I’m not happy
+      - this is frustrating
+      - I’m upset
+      - terrible experience
+      - I’m angry
+      - disappointed in service
+      - this went wrong
+      - I feel bad
+      - very poor
+      - not satisfied
+
+  - intent: my_account
+    examples: |
+      - show me my account
+      - open profile settings
+      - I want to check my account
+      - account dashboard
+      - manage account
+      - see my user info
+      - account preferences
+      - account overview
+      - view profile
+      - profile settings please
+
+  - intent: provide_order_id
+    examples: |
+      - my order ID is [123456](order_id)
+      - here’s the code: [7890](order_id)
+      - can you check [555555](order_id)
+      - it's [4321](order_id)
+      - [111222](order_id)
+      - [989898](order_id)
+      - the number is [999999](order_id)
+      - track this: [444444](order_id)
+      - [654321](order_id) is the ID
+      - use [123123](order_id)
+
+  - intent: refund_help
+    examples: |
+      - I want a refund
+      - how do I get my money back?
+      - help with refund process
+      - I need a return refund
+      - refund request
+      - issue with payment return
+      - can I have my money back?
+      - product refund needed
+      - how to apply for refund?
+      - refund this please
+
+  - intent: return_help
+    examples: |
+      - I want to return a product
+      - how do I start a return?
+      - help me return my item
+      - returning this order
+      - return instructions please
+      - guide me to return
+      - how do I send this back?
+      - this item doesn’t work
+      - exchange this item
+      - issue a return
+
+  - intent: select_order
+    examples: |
+      - choose this one
+      - click this order
+      - select this item
+      - I want this order
+      - this one looks good
+      - track this order
+      - show me this product
+      - view this selection
+      - I select this one
+      - proceed with this order
+
+  - intent: something_else
+    examples: |
+      - this is not my problem
+      - I need different help
+      - nothing here helps
+      - I have another issue
+      - different topic
+      - it’s something else
+      - off-topic query
+      - none of these match
+      - not listed here
+      - something else please
+
+  - intent: talk_to_agent
+    examples: |
+      - talk to a human
+      - connect to support
+      - I want to speak to someone
+      - real agent please
+      - can I talk to a real person?
+      - human help needed
+      - let me talk to support
+      - need a customer care agent
+      - speak to staff
+      - not the bot, a real person
+
+  - intent: track_order
+    examples: |
+      - where’s my package?
+      - track my delivery
+      - check shipping progress
+      - order status please
+      - delivery status
+      - track my order ID
+      - locate my shipment
+      - has it been sent?
+      - delivery info
+      - when will it arrive?

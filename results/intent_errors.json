@@ -1,0 +1,402 @@
+[
+  {
+    "text": "absolutely",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.33312761783599854
+    }
+  },
+  {
+    "text": "definitely",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "return_help",
+      "confidence": 0.33576709032058716
+    }
+  },
+  {
+    "text": "is anyone there to assist?",
+    "intent": "ask_help",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.3381023108959198
+    }
+  },
+  {
+    "text": "are you a real person?",
+    "intent": "bot_challenge",
+    "intent_prediction": {
+      "name": "talk_to_agent",
+      "confidence": 0.9559556245803833
+    }
+  },
+  {
+    "text": "how do I update my password",
+    "intent": "change_password",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.4436051845550537
+    }
+  },
+  {
+    "text": "update credentials",
+    "intent": "change_password",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9705371856689453
+    }
+  },
+  {
+    "text": "modify my profile name",
+    "intent": "change_username",
+    "intent_prediction": {
+      "name": "my_account",
+      "confidence": 0.44199639558792114
+    }
+  },
+  {
+    "text": "update my name on account",
+    "intent": "change_username",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.5097519755363464
+    }
+  },
+  {
+    "text": "how can I deactivate my account",
+    "intent": "delete_account",
+    "intent_prediction": {
+      "name": "my_account",
+      "confidence": 0.5215590596199036
+    }
+  },
+  {
+    "text": "close my account",
+    "intent": "delete_account",
+    "intent_prediction": {
+      "name": "my_account",
+      "confidence": 0.9821509122848511
+    }
+  },
+  {
+    "text": "cancel my registration",
+    "intent": "delete_account",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9979302883148193
+    }
+  },
+  {
+    "text": "when will my package arrive?",
+    "intent": "delivery_help",
+    "intent_prediction": {
+      "name": "track_order",
+      "confidence": 0.8880754709243774
+    }
+  },
+  {
+    "text": "my delivery is late",
+    "intent": "delivery_help",
+    "intent_prediction": {
+      "name": "track_order",
+      "confidence": 0.731835126876831
+    }
+  },
+  {
+    "text": "where is my order?",
+    "intent": "delivery_help",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.6486430764198303
+    }
+  },
+  {
+    "text": "help with delivery",
+    "intent": "delivery_help",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9997422099113464
+    }
+  },
+  {
+    "text": "delivery issue",
+    "intent": "delivery_help",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.8446900248527527
+    }
+  },
+  {
+    "text": "delay in shipping",
+    "intent": "delivery_help",
+    "intent_prediction": {
+      "name": "delete_account",
+      "confidence": 0.11224240064620972
+    }
+  },
+  {
+    "text": "not now",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.5326736569404602
+    }
+  },
+  {
+    "text": "back to main menu",
+    "intent": "go_to_main_menu",
+    "intent_prediction": {
+      "name": "talk_to_agent",
+      "confidence": 0.7684466242790222
+    }
+  },
+  {
+    "text": "home",
+    "intent": "go_to_main_menu",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.21152517199516296
+    }
+  },
+  {
+    "text": "go back",
+    "intent": "go_to_main_menu",
+    "intent_prediction": {
+      "name": "refund_help",
+      "confidence": 0.7918592691421509
+    }
+  },
+  {
+    "text": "take me to start",
+    "intent": "go_to_main_menu",
+    "intent_prediction": {
+      "name": "talk_to_agent",
+      "confidence": 0.9702240824699402
+    }
+  },
+  {
+    "text": "restart the conversation",
+    "intent": "go_to_main_menu",
+    "intent_prediction": {
+      "name": "talk_to_agent",
+      "confidence": 0.6846867203712463
+    }
+  },
+  {
+    "text": "menu",
+    "intent": "go_to_main_menu",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.521184504032135
+    }
+  },
+  {
+    "text": "greetings",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.40276995301246643
+    }
+  },
+  {
+    "text": "what's up",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9611507058143616
+    }
+  },
+  {
+    "text": "this sucks",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "select_order",
+      "confidence": 0.8190130591392517
+    }
+  },
+  {
+    "text": "I hate this",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "select_order",
+      "confidence": 0.9463451504707336
+    }
+  },
+  {
+    "text": "update my profile",
+    "intent": "my_account",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9831363558769226
+    }
+  },
+  {
+    "text": "edit my user data",
+    "intent": "my_account",
+    "intent_prediction": {
+      "name": "change_username",
+      "confidence": 0.7429279088973999
+    }
+  },
+  {
+    "text": "this is the ID: ABC123",
+    "intent": "provide_order_id",
+    "intent_prediction": {
+      "name": "select_order",
+      "confidence": 0.9710519313812256
+    }
+  },
+  {
+    "text": "order code: XZ5678",
+    "intent": "provide_order_id",
+    "intent_prediction": {
+      "name": "select_order",
+      "confidence": 0.49659883975982666
+    }
+  },
+  {
+    "text": "refund the product please",
+    "intent": "refund_help",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.7871432900428772
+    }
+  },
+  {
+    "text": "how to send it back?",
+    "intent": "return_help",
+    "intent_prediction": {
+      "name": "refund_help",
+      "confidence": 0.7757670879364014
+    }
+  },
+  {
+    "text": "help with returns",
+    "intent": "return_help",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9996777772903442
+    }
+  },
+  {
+    "text": "this product is wrong",
+    "intent": "return_help",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9996806383132935
+    }
+  },
+  {
+    "text": "exchange this item",
+    "intent": "return_help",
+    "intent_prediction": {
+      "name": "select_order",
+      "confidence": 0.8707639575004578
+    }
+  },
+  {
+    "text": "none of this helped",
+    "intent": "something_else",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.46037575602531433
+    }
+  },
+  {
+    "text": "something else is wrong",
+    "intent": "something_else",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9986883997917175
+    }
+  },
+  {
+    "text": "I have another problem",
+    "intent": "something_else",
+    "intent_prediction": {
+      "name": "talk_to_agent",
+      "confidence": 0.2669125497341156
+    }
+  },
+  {
+    "text": "not related to above",
+    "intent": "something_else",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.5385369062423706
+    }
+  },
+  {
+    "text": "my issue is different",
+    "intent": "something_else",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9957393407821655
+    }
+  },
+  {
+    "text": "other concern",
+    "intent": "something_else",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.20940452814102173
+    }
+  },
+  {
+    "text": "find order status",
+    "intent": "track_order",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.9228218197822571
+    }
+  },
+  {
+    "text": "check tracking update",
+    "intent": "track_order",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.7204613089561462
+    }
+  },
+  {
+    "text": "is my parcel on the way?",
+    "intent": "track_order",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.7124086022377014
+    }
+  },
+  {
+    "text": "can you locate my shipment?",
+    "intent": "track_order",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.8495792746543884
+    }
+  },
+  {
+    "text": "I want to know when it will arrive",
+    "intent": "track_order",
+    "intent_prediction": {
+      "name": "ask_help",
+      "confidence": 0.47402891516685486
+    }
+  },
+  {
+    "text": "show me the delivery details",
+    "intent": "track_order",
+    "intent_prediction": {
+      "name": "my_account",
+      "confidence": 0.5616474151611328
+    }
+  },
+  {
+    "text": "has my order been shipped?",
+    "intent": "track_order",
+    "intent_prediction": {
+      "name": "select_order",
+      "confidence": 0.3174193501472473
+    }
+  }
+]
